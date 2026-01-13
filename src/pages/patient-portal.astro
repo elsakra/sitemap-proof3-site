@@ -1,0 +1,176 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Patient Portal - Southaven Internal Medicine"
+  description="Access your patient portal for Southaven Internal Medicine. View test results, request refills, and manage your health records online through our secure portal."
+>
+  <Header />
+  
+  <main>
+    <Hero 
+      title="Welcome to the Patient Portal"
+      subtitle="Connect with your physician in a convenient and secure environment"
+      backgroundImage="https://res.cloudinary.com/dil14r8je/image/upload/v1768335493/auto-site-builder/sitemap-proof3/image_6.jpg"
+      height="medium"
+      showButtons={false}
+    />
+    
+    <!-- Portal Access Section -->
+    <section class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="max-w-4xl mx-auto">
+          <div class="animate-section text-center mb-12">
+            <a href="#" class="btn-primary text-xl px-12 py-4 inline-block">
+              Click Here to Access the Portal
+            </a>
+          </div>
+          
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="animate-section">
+              <img 
+                src="https://res.cloudinary.com/dil14r8je/image/upload/v1768335493/auto-site-builder/sitemap-proof3/image_7.jpg" 
+                alt="Patient Portal Interface" 
+                class="rounded-xl shadow-lg w-full h-auto"
+              />
+            </div>
+            
+            <div class="animate-section space-y-8">
+              <div>
+                <h2 class="text-2xl font-bold text-navy-800 mb-4">What is the patient portal?</h2>
+                <p class="text-gray-600 leading-relaxed">
+                  This forum allows you to connect with your physician in a convenient and secure environment. Upon enrolling in the portal, patients can access test results, request refills, and view health records online.
+                </p>
+              </div>
+              
+              <div>
+                <h3 class="text-xl font-bold text-navy-800 mb-4">How do I register for the portal?</h3>
+                <p class="text-gray-600 leading-relaxed">
+                  To register for the portal, either give us a call and ask for us to send you an invite to your email, or you will be sent one automatically at your next office visit. Your invite will come to your email and have instructions to set up your account.
+                </p>
+              </div>
+              
+              <div>
+                <h3 class="text-xl font-bold text-navy-800 mb-4">What is Healow?</h3>
+                <p class="text-gray-600 leading-relaxed">
+                  Healow is our mobile app that offers you all kinds of features through your portal account. Download the app and use our unique practice code to register your account. View your records, request refills, check in for appointments, and contact us all through the app. Your Healow login info is the same as your portal login info.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="section-padding bg-gray-50">
+      <div class="container-custom">
+        <div class="animate-section text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-navy-800 mb-6">
+            Portal Features
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Our patient portal provides convenient access to your healthcare information and communication with your care team.
+          </p>
+        </div>
+        
+        <div class="animate-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="card card-hover bg-white rounded-xl p-8 shadow-lg">
+            <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy-800 mb-4">View Test Results</h3>
+            <p class="text-gray-600">
+              Access your lab results and diagnostic test results as soon as they become available.
+            </p>
+          </div>
+          
+          <div class="card card-hover bg-white rounded-xl p-8 shadow-lg">
+            <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy-800 mb-4">Request Refills</h3>
+            <p class="text-gray-600">
+              Easily request prescription refills online without having to call the office.
+            </p>
+          </div>
+          
+          <div class="card card-hover bg-white rounded-xl p-8 shadow-lg">
+            <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy-800 mb-4">Health Records</h3>
+            <p class="text-gray-600">
+              View your complete health records and medical history in one secure location.
+            </p>
+          </div>
+          
+          <div class="card card-hover bg-white rounded-xl p-8 shadow-lg">
+            <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy-800 mb-4">Secure Messaging</h3>
+            <p class="text-gray-600">
+              Communicate securely with your healthcare team through encrypted messaging.
+            </p>
+          </div>
+          
+          <div class="card card-hover bg-white rounded-xl p-8 shadow-lg">
+            <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy-800 mb-4">Mobile App Access</h3>
+            <p class="text-gray-600">
+              Use the Healow mobile app to access all portal features on your smartphone or tablet.
+            </p>
+          </div>
+          
+          <div class="card card-hover bg-white rounded-xl p-8 shadow-lg">
+            <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3a2 2 0 012-2h4a2 2 0 012 2v4m-6 0V6a2 2 0 012-2h4a2 2 0 012 2v1m-6 0h8m-8 0v10a2 2 0 002 2h4a2 2 0 002-2V7m-8 0H6a2 2 0 00-2 2v10a2 2 0 002 2h1"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy-800 mb-4">Appointment Check-in</h3>
+            <p class="text-gray-600">
+              Check in for your appointments online to save time when you arrive at the office.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Help Section -->
+    <section class="section-padding bg-navy-800 text-white">
+      <div class="container-custom">
+        <div class="animate-section text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">
+            Need Help with the Portal?
+          </h2>
+          <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            Questions? Give us a call at (662) 349-1999 or ask the medical assistant on your next visit!
+          </p>
+          <a href="tel:6623491999" class="btn-primary text-lg px-10 py-4">
+            Call (662) 349-1999
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>

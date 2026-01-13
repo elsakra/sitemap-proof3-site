@@ -1,0 +1,195 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="FAQ - Southaven Internal Medicine"
+  description="Frequently asked questions about Southaven Internal Medicine including insurance, lab work, telehealth options, and payment methods."
+>
+  <Header />
+  
+  <main>
+    <Hero 
+      title="Frequently Asked Questions"
+      subtitle="Find answers to common questions about our practice and services"
+      height="medium"
+      showButtons={false}
+    />
+    
+    <!-- FAQ Section -->
+    <section class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="max-w-4xl mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            <!-- FAQ Image -->
+            <div class="lg:col-span-1 animate-section">
+              <img 
+                src="https://res.cloudinary.com/dil14r8je/image/upload/v1768335494/auto-site-builder/sitemap-proof3/image_13.jpg" 
+                alt="Doctor and Patient consultation" 
+                class="rounded-xl shadow-lg w-full h-auto"
+              />
+            </div>
+            
+            <!-- FAQ Content -->
+            <div class="lg:col-span-2 animate-section">
+              <div class="space-y-8">
+                <!-- Insurance Question -->
+                <div class="bg-gray-50 rounded-xl p-8">
+                  <h3 class="text-xl font-bold text-navy-800 mb-4">
+                    What insurances do you accept?
+                  </h3>
+                  <p class="text-gray-600 mb-4">
+                    We take all major insurances except for the following:
+                  </p>
+                  <ul class="list-disc list-inside text-gray-600 space-y-1">
+                    <li>CIGA-Connect Network</li>
+                    <li>TN Care</li>
+                    <li>United Healthcare 3 Rivers</li>
+                    <li>United Healthcare Common Plan</li>
+                    <li>United Healthcare Ambetter</li>
+                    <li>United Healthcare Compass</li>
+                    <li>United Healthcare Dual Complete</li>
+                  </ul>
+                </div>
+                
+                <!-- Lab Work Question -->
+                <div class="bg-gray-50 rounded-xl p-8">
+                  <h3 class="text-xl font-bold text-navy-800 mb-4">
+                    If the doctor orders me blood work, where can I get it done?
+                  </h3>
+                  <p class="text-gray-600">
+                    For your convenience, American Esoteric Laboratories (AEL) has a location right inside our office. All blood work your physician orders can be done on site.
+                  </p>
+                </div>
+                
+                <!-- Telehealth Question -->
+                <div class="bg-gray-50 rounded-xl p-8">
+                  <h3 class="text-xl font-bold text-navy-800 mb-4">
+                    What if I'm not able to come in for an office visit but I want to see the doctor?
+                  </h3>
+                  <p class="text-gray-600">
+                    Don't worry! We are now offering telehealth options for our patients. This option allows the doctor to Face Time or call patients securely for their office visit. Of course some appointments still require an in person visit. If you are interested, call and ask about our telehealth appointments.
+                  </p>
+                </div>
+                
+                <!-- Payment Question -->
+                <div class="bg-gray-50 rounded-xl p-8">
+                  <h3 class="text-xl font-bold text-navy-800 mb-4">
+                    Which credit cards do you accept?
+                  </h3>
+                  <p class="text-gray-600">
+                    We accept all major credit cards.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Additional FAQ Section -->
+    <section class="section-padding bg-gray-50">
+      <div class="container-custom">
+        <div class="animate-section text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-navy-800 mb-6">
+            More Common Questions
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Here are additional questions we frequently receive from our patients.
+          </p>
+        </div>
+        
+        <div class="animate-cards grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <!-- Same Day Appointments -->
+          <div class="card card-hover bg-white rounded-xl p-8 shadow-lg">
+            <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy-800 mb-4">
+              Do you offer same-day appointments?
+            </h3>
+            <p class="text-gray-600">
+              Yes! We have 15 appointments available for same-day access when you need immediate care. Call us early in the day for the best availability.
+            </p>
+          </div>
+          
+          <!-- New Patients -->
+          <div class="card card-hover bg-white rounded-xl p-8 shadow-lg">
+            <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy-800 mb-4">
+              Are you accepting new patients?
+            </h3>
+            <p class="text-gray-600">
+              Yes, we are currently accepting new patients. Call us at (662) 349-1999 to schedule your initial consultation with one of our board certified physicians.
+            </p>
+          </div>
+          
+          <!-- Prescription Refills -->
+          <div class="card card-hover bg-white rounded-xl p-8 shadow-lg">
+            <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy-800 mb-4">
+              How do I request prescription refills?
+            </h3>
+            <p class="text-gray-600">
+              You can request prescription refills through our patient portal online, or by calling our office. We recommend using the portal for faster processing.
+            </p>
+          </div>
+          
+          <!-- Parking -->
+          <div class="card card-hover bg-white rounded-xl p-8 shadow-lg">
+            <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy-800 mb-4">
+              Is parking available?
+            </h3>
+            <p class="text-gray-600">
+              Yes, we have convenient parking available at our Airways Blvd location. Our office is located below the children's clinic for easy identification.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact CTA -->
+    <section class="section-padding bg-navy-800 text-white">
+      <div class="container-custom">
+        <div class="animate-section text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">
+            Still Have Questions?
+          </h2>
+          <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            Our friendly staff is here to help answer any questions you may have about our practice, services, or scheduling an appointment.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="tel:6623491999" class="btn-primary text-lg px-10 py-4">
+              Call (662) 349-1999
+            </a>
+            <a href="/patient-portal" class="btn-secondary bg-transparent border-white hover:bg-white hover:text-navy-800 text-lg px-10 py-4">
+              Patient Portal
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>

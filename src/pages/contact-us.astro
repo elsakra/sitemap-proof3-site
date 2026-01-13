@@ -1,0 +1,180 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Hours & Location - Southaven Internal Medicine"
+  description="Find our office hours, location, and directions to Southaven Internal Medicine at 7680 Airways Blvd, Southaven, MS 38671. Call (662) 349-1999."
+>
+  <Header />
+  
+  <main>
+    <Hero 
+      title="Hours & Location"
+      subtitle="Visit us at our convenient Southaven location"
+      height="medium"
+      showButtons={false}
+    />
+    
+    <!-- Office Hours Section -->
+    <section class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Hours -->
+          <div class="animate-section">
+            <h2 class="text-3xl font-bold text-navy-800 mb-8">Office Hours</h2>
+            
+            <div class="bg-gray-50 rounded-xl p-8 mb-8">
+              <h3 class="text-xl font-bold text-navy-800 mb-6">Regular Clinic Hours</h3>
+              <div class="space-y-4">
+                <div class="flex justify-between items-center py-2 border-b border-gray-200">
+                  <span class="font-medium text-gray-800">Monday & Wednesday:</span>
+                  <span class="text-gray-600">7:00 AM - 5:00 PM</span>
+                </div>
+                <div class="flex justify-between items-center py-2 border-b border-gray-200">
+                  <span class="font-medium text-gray-800">Tuesday & Thursday:</span>
+                  <span class="text-gray-600">8:00 AM - 5:00 PM</span>
+                </div>
+                <div class="flex justify-between items-center py-2">
+                  <span class="font-medium text-gray-800">Friday:</span>
+                  <span class="text-gray-600">7:00 AM - 11:00 AM</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-teal-50 border-l-4 border-teal-500 p-6 rounded-r-lg mb-8">
+              <div class="flex items-center mb-2">
+                <svg class="w-5 h-5 text-teal-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="font-semibold text-teal-800">Same-Day Appointments</span>
+              </div>
+              <p class="text-teal-700">
+                We have 15 appointments open access for same day appointments when you need immediate care.
+              </p>
+            </div>
+            
+            <!-- Holiday Hours -->
+            <div class="bg-gray-50 rounded-xl p-8">
+              <h3 class="text-xl font-bold text-navy-800 mb-6">Holiday Hours</h3>
+              <div class="mb-4">
+                <h4 class="font-semibold text-gray-800 mb-3">Closed on:</h4>
+                <ul class="space-y-2 text-gray-600">
+                  <li>• Memorial Day</li>
+                  <li>• July 4th</li>
+                  <li>• Labor Day</li>
+                  <li>• Thanksgiving Day</li>
+                  <li>• Christmas Day</li>
+                  <li>• New Year's Day</li>
+                </ul>
+              </div>
+              <p class="text-sm text-gray-600 italic">
+                We are open all other holidays
+              </p>
+            </div>
+          </div>
+          
+          <!-- Location -->
+          <div class="animate-section">
+            <h2 class="text-3xl font-bold text-navy-800 mb-8">Location & Directions</h2>
+            
+            <div class="bg-gray-50 rounded-xl p-8 mb-8">
+              <div class="flex items-start space-x-4 mb-6">
+                <div class="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-navy-800 mb-2">Our Address</h3>
+                  <p class="text-gray-600 text-lg">
+                    7680 Airways Blvd.<br>
+                    Southaven, MS 38671
+                  </p>
+                </div>
+              </div>
+              
+              <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                  <svg class="w-5 h-5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                  </svg>
+                  <a href="tel:6623491999" class="text-teal-600 hover:text-teal-700 font-medium">
+                    (662) 349-1999
+                  </a>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m-9 0h10a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2z"></path>
+                  </svg>
+                  <span class="text-gray-600">
+                    Fax: (662) 349-9734
+                  </span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Map -->
+            <div class="mb-8">
+              <img 
+                src="https://res.cloudinary.com/dil14r8je/image/upload/v1768335493/auto-site-builder/sitemap-proof3/image_8.jpg" 
+                alt="Map showing location of Southaven Internal Medicine" 
+                class="w-full h-64 object-cover rounded-xl shadow-lg"
+              />
+            </div>
+            
+            <!-- Directions -->
+            <div class="bg-navy-50 rounded-xl p-8">
+              <h3 class="text-xl font-bold text-navy-800 mb-4">Directions</h3>
+              <div class="space-y-4">
+                <div class="flex items-start space-x-3">
+                  <div class="w-6 h-6 bg-teal-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span class="text-white text-sm font-bold">1</span>
+                  </div>
+                  <p class="text-gray-700">Turn in here at 7680 Airways Blvd</p>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-6 h-6 bg-teal-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span class="text-white text-sm font-bold">2</span>
+                  </div>
+                  <p class="text-gray-700">Our office is below the children's clinic</p>
+                </div>
+              </div>
+              
+              <div class="mt-6">
+                <img 
+                  src="https://res.cloudinary.com/dil14r8je/image/upload/v1768335493/auto-site-builder/sitemap-proof3/image_9.jpg" 
+                  alt="Office building entrance" 
+                  class="w-full h-48 object-cover rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact CTA -->
+    <section class="section-padding bg-teal-500 text-white">
+      <div class="container-custom">
+        <div class="animate-section text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">
+            Ready to Schedule Your Visit?
+          </h2>
+          <p class="text-xl mb-8 max-w-2xl mx-auto">
+            Contact us today to schedule your appointment. We're here to provide you with exceptional internal medicine care.
+          </p>
+          <a href="tel:6623491999" class="btn-primary bg-white text-teal-500 hover:bg-gray-100 text-lg px-10 py-4">
+            Call (662) 349-1999
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>

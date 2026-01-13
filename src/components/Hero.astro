@@ -1,0 +1,58 @@
+---
+export interface Props {
+  title: string;
+  subtitle?: string;
+  backgroundImage?: string;
+  showButtons?: boolean;
+  height?: 'full' | 'large' | 'medium';
+}
+
+const { 
+  title, 
+  subtitle, 
+  backgroundImage = 'https://res.cloudinary.com/dil14r8je/image/upload/v1768335491/auto-site-builder/sitemap-proof3/image_1.jpg',
+  showButtons = true,
+  height = 'full'
+} = Astro.props;
+
+const heightClasses = {
+  full: 'min-h-screen',
+  large: 'min-h-[80vh]',
+  medium: 'min-h-[60vh]'
+};
+---
+
+<section 
+  class={`relative ${heightClasses[height]} flex items-center justify-center bg-cover bg-center bg-no-repeat`}
+  style={`background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${backgroundImage}')`}
+>
+  <div class="container-custom text-center text-white relative z-10">
+    <h1 class="hero-title text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+      {title}
+    </h1>
+    
+    {subtitle && (
+      <p class="hero-subtitle text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed text-gray-100">
+        {subtitle}
+      </p>
+    )}
+    
+    {showButtons && (
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="tel:6623491999" class="hero-button btn-primary text-lg px-10 py-4">
+          Call us today at (662) 349-1999
+        </a>
+        <a href="/patient-portal" class="hero-button btn-secondary text-lg px-10 py-4 bg-white/10 border-white hover:bg-white hover:text-navy-800">
+          Patient Portal
+        </a>
+      </div>
+    )}
+  </div>
+  
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+    </svg>
+  </div>
+</section>

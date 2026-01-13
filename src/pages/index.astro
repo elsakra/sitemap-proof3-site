@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Services from '../components/Services.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Southaven Internal Medicine - Board Certified Physicians Since 1996"
+  description="Southaven Internal Medicine provides comprehensive internal medicine care in Southaven, MS. Board certified physicians offering preventative care, health screenings, and chronic disease management since 1996."
+>
+  <Header />
+  
+  <main>
+    <Hero 
+      title="Dedicated to our patients since 1996"
+      subtitle="Southaven Internal Medicine has been committed to providing our patients with the highest level of care in a friendly and comfortable environment. Our goal is to make our patients feel like they are family."
+    />
+    
+    <About />
+    
+    <Services />
+    
+    <Contact />
+  </main>
+  
+  <Footer />
+</Layout>
